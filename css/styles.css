@@ -30,8 +30,8 @@ img {
 /* container */
 .container {
     margin: 0 auto;
-    width: 1158px;
-    padding: 0 15px;
+    width: 320px;
+    /* padding: 0 15px; */
 }
 
 /* Header */
@@ -195,7 +195,8 @@ background-color: #404bbf;
 
 /* Section 2 */
 .benefits {
-    padding: 120px 0;
+    /* padding: 120px 0; */
+    padding: 96px 16px;
 }
 
 .benefits-icons {
@@ -233,29 +234,42 @@ position: absolute;
 
 .benefits-list {
     display: flex;
-    gap: 24px;
+    flex-wrap: wrap;
+    /* gap: 24px; */
+    gap: 72px;
 }
 
 .benefits-list-item {
-    width: calc((100% - 72px) / 4);
-    margin-right: 0;
+    /* width: calc((100% - 72px) / 4); */
+    /* margin-right: 0; */
 }
 
 .benefits-list-title {
-        font-weight: 500;
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 111%;
+        letter-spacing: 0.02em;
+        text-align: center;
+        color: #2e2f42;
+        /* font-weight: 500;
         font-size: 20px;
         line-height: 120%;
         letter-spacing: 0.02em;
         color: #2e2f42;
-        margin-bottom: 8px;
+        margin-bottom: 8px; */
         
 }
 
 .benefits-list-par {
+        font-weight: 500;
         font-size: 16px;
         line-height: 150%;
         letter-spacing: 0.02em;
         color: #434455;
+        /* font-size: 16px;
+        line-height: 150%;
+        letter-spacing: 0.02em;
+        color: #434455; */
         
 }
 
@@ -265,6 +279,7 @@ position: absolute;
         list-style: none;
         padding: 0;
         margin: 0;
+        display: none;
 }
 
 .benefits-img-icon {
@@ -276,10 +291,32 @@ position: absolute;
 
 }
 
-.benefits-img-item {
-   
-       
+@media screen and (min-width:768px) {
+.container {
+        margin: 0 auto;
+        width: 768px;
+    }
+
+        .benefits {
+            padding: 96px 16px;
+        }
+
+                .benefits-list {
+                    gap: 72px 24px;
+                }
+                                .benefits-list-item {
+                                    padding-right: 0;
+                                    width: calc((100%-24px) / 4);
+                                }
 }
+
+@media screen and (min-width:1158px) {
+
+}
+
+
+
+
 
 /* Section 3 */
 
@@ -883,3 +920,5 @@ border-color: #4D5AE5;
     margin-left: 16px;
     fill: #fff;
 }
+
+
