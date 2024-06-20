@@ -21,7 +21,7 @@ p,h1,h2,h3,h4,h5,h6 {
 }
 
 button {
-    crusor:pointer;
+    cursor:pointer;
 }
 
 img {
@@ -196,7 +196,6 @@ background-color: #404bbf;
 /* Section 2 */
 .benefits {
     /* padding: 120px 0; */
-    padding: 96px 16px;
 }
 
 .benefits-icons {
@@ -226,15 +225,18 @@ position: absolute;
 }
 
 .benefits-container {
-    display: flex;
-        flex-direction: column;
-        margin: 0 auto;
+   /*  display: flex;
+        flex-direction: column; */
+        /* margin: 0 auto; */
+        padding: 96px 16px;
 
 }
 
 .benefits-list {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+        align-items: center;
     /* gap: 24px; */
     gap: 72px;
 }
@@ -242,6 +244,7 @@ position: absolute;
 .benefits-list-item {
     /* width: calc((100% - 72px) / 4); */
     /* margin-right: 0; */
+    
 }
 
 .benefits-list-title {
@@ -293,25 +296,74 @@ position: absolute;
 
 @media screen and (min-width:768px) {
 .container {
-        margin: 0 auto;
         width: 768px;
     }
 
-        .benefits {
-            padding: 96px 16px;
+        .benefits-list-title {
+        text-align:left;
         }
 
                 .benefits-list {
-                    gap: 72px 24px;
+                    flex-direction:row;
+                    gap: 72px 24px;  
                 }
                                 .benefits-list-item {
-                                    padding-right: 0;
-                                    width: calc((100%-24px) / 4);
-                                }
+                                    flex-basis: calc((100% - 24px) / 2);
+                                 }
 }
 
 @media screen and (min-width:1158px) {
+    .container {
+            width: 1158px;
+        }
 
+        
+        
+                .benefits-container {
+                     display: flex;
+                flex-direction: column;
+                    margin: 0 auto;
+                    padding: 120px 0;
+        
+                }
+        
+                .benefits-list {
+                    gap: 24px;
+                    flex-wrap:nowrap;
+                }
+        
+                .benefits-list-item {
+                    width: calc((100% - 72px) / 4);
+                    margin-right: 0;
+        
+                }
+        
+                .benefits-list-title {
+                    font-weight: 500;
+                font-size: 20px;
+                line-height: 120%;
+                letter-spacing: 0.02em;
+                margin-bottom: 8px;
+        
+                }
+        
+                .benefits-list-par {
+                font-weight: 400;
+                    font-size: 16px;
+                    line-height: 150%;
+                    letter-spacing: 0.02em;
+                    
+        
+                }
+        
+                .benefits-list-img {
+                display: flex;
+                }
+        
+                .benefits-img-item {
+                    width: calc((100% - 72px) / 4);
+                }
+                
 }
 
 
