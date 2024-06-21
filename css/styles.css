@@ -44,6 +44,8 @@ img {
 .header-container {
 display: flex;
 align-items: center;
+justify-content: space-between;
+padding: 0 16px;
 
 }
 .header-nav {
@@ -52,8 +54,9 @@ align-items: center;
 }
 
 .header-list {
-display: flex;
-gap: 40px;
+    display: none;
+/* display: flex;
+gap: 40px; */
 }
 
 .header-logo {
@@ -64,7 +67,9 @@ font-family: "Raleway", sans-serif;
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #4d5ae5;
-    margin-right: 76px;
+    /* margin-right: 76px; */
+    padding-top: 16px;
+    padding-bottom: 16px;
 }
 
 .header-logo-color {
@@ -115,6 +120,7 @@ color: #404bbf;
 .adress {
     margin-left: auto;
     font-style: normal;
+    display: none;
     
 }
 
@@ -135,6 +141,85 @@ color: #404bbf;
 .adress-list-item-link:focus {
     color: #404bbf;
 }
+
+
+.open-menu-btn {
+padding: 0;
+line-height: 0;
+background-color: transparent;
+cursor: pointer;
+border: none;
+
+}
+
+@media screen and (min-width:768px) {
+
+.header-list {
+    display: flex;
+    gap: 40px;
+}
+
+.open-menu-btn {
+    display: none;
+}
+
+.adress {
+    display: block;
+}
+
+.adress-list {
+    display: block;
+}
+
+.header-logo {
+    margin-right: 120px;
+}
+
+.adress-list-item-link {
+    font-weight: 400;
+        font-size: 12px;
+        line-height: 117%;
+        letter-spacing: 0.04em;
+}
+
+.adress-list-item {
+    margin-bottom: 12px;
+}
+
+.adress-list-item:nth-child(2) {
+    margin-bottom: 0;
+}
+
+}
+
+@media screen and (min-width:1158px) {
+
+.header-container {
+    padding: 0 15px;
+}
+
+.header-logo {
+    margin-right: 76px;
+}
+.adress-list {
+    display: flex;
+}
+
+.adress-list-item-link {
+
+font-size: 16px;
+    line-height: 150%;
+}
+
+.adress-list-item {
+    margin: 0;
+}
+
+
+
+}
+
+
 /* section 1 */
 .hero {
     background-color: #2e2f42;
@@ -393,6 +478,7 @@ position: absolute;
 @media screen and (min-width:1158px) {
     .container {
             width: 1158px;
+            padding: 0 15px;
         }
 
         
@@ -401,7 +487,7 @@ position: absolute;
                      display: flex;
                 flex-direction: column;
                     margin: 0 auto;
-                    padding: 120px 0;
+                    padding: 120px 16px;
         
                 }
         
@@ -593,7 +679,7 @@ width: calc((100% - 24px) / 2);
 @media screen and (min-width:1158px) {
 
 .team-container {
-    padding: 0;
+    padding: 0 16px;
 }
 
     .myteam {
@@ -1023,8 +1109,7 @@ gap: 24px;
 }
 
 .footer {
-    padding-top: 100px;
-    padding-bottom: 100px;
+   padding: 100px 16px;
 }
 
 .footer-container {
