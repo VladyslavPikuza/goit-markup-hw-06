@@ -778,6 +778,7 @@ overflow: hidden;
         text-align: center;
         padding: 96px 16px;
         margin: 0 auto;
+        width: 100%;
         /* align-items: baseline; */
 }
 
@@ -882,28 +883,154 @@ display: flex;
     fill: #f4f4fd;
 }
 
+
+
+/* Footer form */
+
+.footer-in {
+    /* margin-left: 80px; */
+}
+
+
+.email-text {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0.02em;
+    color: #fff;
+    margin-bottom: 16px;
+}
+
+.footer-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 16px;
+    /* gap: 24px; */
+}
+
+.footer-form-wrap {
+    display: flex;
+}
+
+.footer-input {
+    border: 1px solid #fff;
+    border-radius: 4px;
+    width: 288px;
+    /* width: 264px; */
+    height: 40px;
+    background-color: transparent;
+    padding: 0 16px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    font-size: 12px;
+    line-height: 2;
+    letter-spacing: 0.04em;
+    color: #ffffff;
+}
+
+.footer-input::placeholder {
+    font-size: 12px;
+    line-height: 200%;
+    letter-spacing: 0.04em;
+    color: #ffffff;
+    ;
+}
+
+.footer-form-btn {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0.04em;
+    text-align: center;
+    color: #fff;
+    border-radius: 4px;
+    min-width: 165px;
+    height: 40px;
+    background-color: #4d5ae5;
+    border: none;
+    padding: 8px 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.footer-icon {
+    margin-left: 16px;
+    fill: #fff;
+}
+
 @media screen and (min-width:768px) {
+    .footer-container {
+        width: 100%;
+        max-width: 264px;
+        padding-right: 24px;
+        text-align: left;
+    }
 
 .footer-block {
     flex-wrap: wrap;
     flex-direction: row;
-        align-items: center;
-        text-align: center;
+    justify-content: center;
+    padding-left: 108px;
+    padding-right: 164px;
 }
+
 .footer-form {
 
-    flex-wrap: nowrap;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: flex-start;
+flex-direction: row;
+gap: 24px;
 
+}
+
+.footer-social {
+    margin-bottom: 104px;
+}
+.footer-text {
+    text-align: left;
+}
+
+.footer-par {
+    max-width: 264px;
+    
+}
+.footer-input {
+    width: 264px;
+}
+
+.footer-form {
+    gap: 24px;
+}
+
+.footer-in {
+    text-align: left;
 }
 
 }
 
 @media screen and (min-width:1158px) {
 
+.footer-in {
+    margin-left: 80px;
+}
 
+.footer-block {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: baseline;
+    padding: 0;
+}
+
+.footer {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.footer-container {
+    margin-right: 120px;
+    padding: 0;
+}
 
 }
 
@@ -1123,80 +1250,4 @@ border-color: #4D5AE5;
 .modal-field-privacy {
     display: inline-flex;
 }
-
-/* Footer form */
-
-.footer-in {
-    /* margin-left: 80px; */
-}
-
-
-.email-text {
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 150%;
-    letter-spacing: 0.02em;
-    color: #fff;
-    margin-bottom: 16px;
-}
-
-.footer-form {
-    display: flex;
-    flex-direction: column;
-        align-items: center;
-        text-align: center;
-        gap: 16px;
-    /* gap: 24px; */
-}
-
-.footer-form-wrap {
-    display: flex;
-}
-
-.footer-input {
-    border: 1px solid #fff;
-    border-radius: 4px;
-    width: 288px;
-    /* width: 264px; */
-    height: 40px;
-    background-color: transparent;
-    padding: 0 16px;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    font-size: 12px;
-    line-height: 2;
-    letter-spacing: 0.04em;
-    color: #ffffff;
-}
-
-.footer-input::placeholder {
-    font-size: 12px;
-    line-height: 200%;
-    letter-spacing: 0.04em;
-    color: #ffffff;;
-}
-
-.footer-form-btn {
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 150%;
-    letter-spacing: 0.04em;
-    text-align: center;
-    color: #fff;
-    border-radius: 4px;
-    min-width: 165px;
-    height: 40px;
-    background-color: #4d5ae5;
-    border: none;
-    padding: 8px 24px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-}
-
-.footer-icon {
-    margin-left: 16px;
-    fill: #fff;
-}
-
 
