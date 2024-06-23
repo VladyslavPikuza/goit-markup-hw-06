@@ -773,6 +773,7 @@ width: calc((100% - 24px) / 2);
 
 .team-container {
     width: 100%;
+    max-width: 1158рх;
     padding: 0 15px;
 }
 
@@ -788,6 +789,8 @@ width: calc((100% - 24px) / 2);
 
 .team-list {
     gap: 24px;
+    align-items: center;
+    justify-content: center;
     flex-wrap: nowrap;
     
 }
@@ -1209,12 +1212,14 @@ row-gap: 24px;
 
 .footer-block {
     display: flex;
+    justify-content: center;
     flex-wrap: nowrap;
     align-items: baseline;
     padding-right: 15px;
         padding-left: 15px;
-        width: 100%;
         gap:0;
+        width: 100%;
+            max-width: 1158рх;
 }
 
 .footer {
